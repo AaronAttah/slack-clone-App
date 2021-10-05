@@ -1,0 +1,13 @@
+.styleChangeMode{
+    background-color: transparent;
+    color:#e7dcdc;
+    border-top-left-radius:10px; 
+    border-bottom-right-radius:10px;
+    cursor:pointer;
+    border: 5px solid #612961;
+}
+.activeStyleChangeModeCont{
+    background-color: transparent;
+    border: 5px solid grey;
+
+}

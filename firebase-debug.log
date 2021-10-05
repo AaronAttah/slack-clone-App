@@ -1,0 +1,84 @@
+[debug] [2021-08-10T23:36:47.374Z] ----------------------------------------------------------------------
+[debug] [2021-08-10T23:36:47.377Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Work-Station\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init firestore
+[debug] [2021-08-10T23:36:47.378Z] CLI Version:   9.16.0
+[debug] [2021-08-10T23:36:47.378Z] Platform:      win32
+[debug] [2021-08-10T23:36:47.378Z] Node Version:  v14.16.0
+[debug] [2021-08-10T23:36:47.381Z] Time:          Wed Aug 11 2021 00:36:47 GMT+0100 (West Africa Standard Time)
+[debug] [2021-08-10T23:36:47.381Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-10T23:36:47.482Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rules"}
+[debug] [2021-08-10T23:36:47.488Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-10T23:36:47.488Z] > authorizing via signed-in user (aoahorizon@gmail.com)
+[debug] [2021-08-10T23:36:47.491Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rules"}
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Work-Station\slack-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using slack-clone-project-76e17. 
+[debug] [2021-08-10T23:36:54.551Z] > refreshing access token with scopes: []
+[debug] [2021-08-10T23:36:54.553Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-10T23:36:55.122Z] <<< HTTP RESPONSE 200 {"date":"Tue, 10 Aug 2021 23:36:56 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-10T23:36:55.231Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/slack-clone-project-76e17 [none]
+[debug] [2021-08-10T23:36:55.880Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/slack-clone-project-76e17 200
+[debug] [2021-08-10T23:36:55.881Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/slack-clone-project-76e17 {"projectId":"slack-clone-project-76e17","projectNumber":"957773957045","displayName":"slack-clone-project","name":"projects/slack-clone-project-76e17","resources":{"hostingSite":"slack-clone-project-76e17","realtimeDatabaseInstance":"slack-clone-project-76e17-default-rtdb","storageBucket":"slack-clone-project-76e17.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+=== Firestore Setup
+[debug] [2021-08-10T23:36:55.890Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-10T23:36:55.890Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-10T23:36:56.301Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 10 Aug 2021 23:36:57 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-10T23:36:56.407Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/slack-clone-project-76e17/services/firestore.googleapis.com  
+ 
+[debug] [2021-08-10T23:36:58.206Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Aug 2021 23:36:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-10T23:36:58.208Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/slack-clone-project-76e17  
+ 
+[debug] [2021-08-10T23:36:59.443Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Aug 2021 23:37:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-10T23:36:59.444Z] database_type: CLOUD_FIRESTORE
+[debug] [2021-08-10T23:36:59.445Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-10T23:36:59.445Z] > authorizing via signed-in user (aoahorizon@gmail.com)
+[debug] [2021-08-10T23:36:59.445Z] [iam] checking project slack-clone-project-76e17 for permissions ["firebase.projects.get"]
+[debug] [2021-08-10T23:36:59.446Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/slack-clone-project-76e17:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-08-10T23:37:00.993Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Aug 2021 23:37:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1084","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-08-10T23:37:17.304Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/slack-clone-project-76e17/releases?pageSize=10&pageToken=  
+ 
+[debug] [2021-08-10T23:37:18.016Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Aug 2021 23:37:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-10T23:37:18.022Z] Found ruleset: projects/slack-clone-project-76e17/rulesets/7cf19ab1-0fd0-4257-8028-39dba9350a07
+[debug] [2021-08-10T23:37:18.024Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/slack-clone-project-76e17/rulesets/7cf19ab1-0fd0-4257-8028-39dba9350a07  
+ 
+[debug] [2021-08-10T23:37:18.993Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Aug 2021 23:37:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-10T23:37:19.470Z] Error: EISDIR: illegal operation on a directory, open 'C:\Users\Work-Station\slack-clone'
+    at Object.openSync (fs.js:476:3)
+    at Object.writeFileSync (fs.js:1467:35)
+    at Object.createFileSync (C:\Users\Work-Station\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:43:6)
+    at Config.writeProjectFile (C:\Users\Work-Station\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:144:12)
+    at C:\Users\Work-Station\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\firestore\rules.js:50:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.doSetup [as firestore] (C:\Users\Work-Station\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\firestore\index.js:35:5)
+    at async init (C:\Users\Work-Station\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: An unexpected error has occurred.
